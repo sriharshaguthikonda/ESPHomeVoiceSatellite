@@ -177,7 +177,29 @@ voice_assistant:
     - text_sensor.template.publish:
         id: va_state
         state: "${not_ready_phase}"
+output:
+  - platform: gpio
+    pin: GPIO5
+    id: gain_control
 
+script:
+  - id: set_gain_high
+    then:
+      - output.turn_on: gain_control
+
+  - id: set_gain_low
+    then:
+      - output.turn_off: gain_control
+
+# Example usage in your logic
+binary_sensor:
+  - platform: gpio
+    pin: GPIO18
+    id: gain_button
+    on_press:
+      - script.execute: set_gain_high
+    on_release:
+      - script.execute: set_gain_low
 
 i2s_audio:
   - id: i2s_in
