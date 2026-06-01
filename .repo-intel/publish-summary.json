@@ -1,0 +1,25 @@
+﻿{
+    "schemaVersion":  "repo-map-artifact-branch/v1",
+    "repo":  "sriharshaguthikonda/ESPHomeVoiceSatellite",
+    "generatedAt":  "2026-06-01T06:04:57.4981289Z",
+    "source":  "Repo_maps GitHub footprint publish runner",
+    "publishBranch":  "repo-intel-artifacts",
+    "mapCount":  2,
+    "totalBytes":  78323,
+    "maps":  [
+                 {
+                     "name":  "copilot-improvements",
+                     "ref":  "refs/remotes/origin/copilot-improvements",
+                     "commit":  "e28ce1233990273e24fb7a6c726fcb5694b0a3db",
+                     "path":  ".repo-intel/branches/remote-origin/copilot-improvements__e28ce1233990/repo-map-full.json",
+                     "bytes":  35982
+                 },
+                 {
+                     "name":  "main",
+                     "ref":  "refs/remotes/origin/main",
+                     "commit":  "b31ea20b0d86331cbf66100013262ddb61595ef0",
+                     "path":  ".repo-intel/branches/remote-origin/main__b31ea20b0d86/repo-map-full.json",
+                     "bytes":  35973
+                 }
+             ]
+}
